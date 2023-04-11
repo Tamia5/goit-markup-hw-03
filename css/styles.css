@@ -1,0 +1,169 @@
+:root {
+    /* Загальний колір всього тексту */
+    --main-text-color: #434455;
+    --headers-color: #2E2F42;
+    --logo-firstpart-color: #4D5AE5;
+    --cursor-color: #404bbf;
+    --portfolio-botton-text-color: #4D5AE5;
+    --logo-footer-color: #f4f4fd;
+    /* Загальний шрифт */
+    --logo-font-family: 'Raleway', sans-serif;
+    --main-font-family: 'Roboto', sans-serif;
+    /* Загальний колір фону */
+    --body-background-color: #FFFFFF;
+    --title-background-color: #2E2F42;
+    --footer-background-color: #2E2F42;
+    --portfolio-button-background-color: #F4F4FD;
+}
+
+body {
+    font-family: var(--main-font-family);
+    color: var(--main-text-color);
+    background-color: var(--body-background-color);
+}
+.link {
+    text-decoration: none;
+}
+.list {
+    list-style: none;
+}
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--logo-firstpart-color);
+}
+.part-logo {
+    color: var(--headers-color);
+    font-family: var(--logo-font-family);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.nav {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--headers-color);
+}
+.nav:hover,
+.nav:focus {
+    color: var(--cursor-color);
+}
+.contacts {
+    font-style: normal;
+}
+.contact-nav {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+}
+.contact-nav:hover,
+.contact-nav:focus {
+    color: var(--cursor-color);
+}
+
+/* First section */
+.title {
+    background-color: var(--title-background-color);
+}
+.page-title {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+.button-order {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    background-color: #4D5AE5;
+    cursor: pointer;
+    font-family: var(--main-font-family);
+}
+.button-order:hover,
+.button-order:focus {
+    background-color: #404BBF;
+}
+
+/* Second section list + header */
+.sub-title {
+    font-family: var(--main-font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--headers-color);
+}
+.info {
+    font-family: var(--main-font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+}
+
+/* The third section header */
+.title-img {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--headers-color);
+}
+
+/* The fourth section*/
+.team-card {
+    background-color: #F4F4FD;
+}
+.title-ourteam {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--headers-color);
+}
+.card-content {
+    background-color: #FFFFFF;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--footer-background-color);
+    color: #F4F4FD;;
+}
+.light-part {
+    color: var(--logo-footer-color);
+}
+
+/* Portfolio */
+.filter-button {
+    font-family: var(--main-font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--portfolio-botton-text-color);
+    background-color: var(--portfolio-button-background-color);
+    cursor: pointer;
+}
+.filter-button:hover,
+.filter-button:focus {
+    background-color: #404BBF;
+    color: #FFFFFF;
+}
