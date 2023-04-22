@@ -66,6 +66,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
+    text-align: center;
 }
 
 /*=============================================
@@ -88,13 +89,11 @@ img {
 .page-nav-left {
     display: flex;
     gap: 40px;
-    margin-left: 76px;
     padding: 24px 0;
 }
 .page-nav-right {
     display: flex;
     align-items: center;
-    padding: 24px 0;
     gap: 40px;
 }
 
@@ -109,6 +108,7 @@ img {
     text-transform: uppercase;
     letter-spacing: 0.03em;
     color: var(--logo-firstpart-color);
+    margin-right: 76px
 }
 .part-logo {
     color: var(--headers-color);
@@ -127,6 +127,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--headers-color);
+    padding: 24px 0;
 }
 .nav:hover,
 .nav:focus {
@@ -171,6 +172,7 @@ img {
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: none;
+    min-width: 169px
 
 }
 .button-order:hover,
@@ -206,6 +208,8 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--headers-color);
+    margin-bottom: 8px;
+    text-align: center;
 }
 .title-ourteam {
     font-size: 36px;
@@ -215,6 +219,7 @@ img {
     text-transform: capitalize;
     color: var(--headers-color);
     margin-bottom: 72px;
+    text-align: center;
 }
 
 /*=============================================
@@ -263,7 +268,7 @@ img {
  
 }
 .team-name {
-    padding: 32px 0;
+    padding: 32px 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -271,7 +276,7 @@ img {
 }
 
 
-/*=====  End of Footer  ======*/
+/*=====  Footer  ======*/
 .footer {
     background-color: var(--footer-background-color);
     color: #F4F4FD;
@@ -286,7 +291,10 @@ img {
     width: 264px;
     display: flex;
 }
-
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 16px;
+}
 
 /*=============================================
 =            Portfolio  page - style           =
@@ -310,9 +318,10 @@ img {
 .filter-button:focus {
     background-color: #404BBF;
     color: #FFFFFF;
+    border: 1px solid transparent
 }
 .section-filter {
-    padding: 96px 0;
+    padding: 96px 0 120px;
 }
 .btn-filter {
     display: flex;
@@ -327,7 +336,9 @@ img {
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
-    flex-basis: calc((100% - 24px * 3) / 3);
+}
+.card-info-block {
+    width: calc((100% - 48px) / 3);
 }
 .card-info {
     display: flex;
@@ -335,4 +346,5 @@ img {
     gap: 8px;
     padding: 32px 16px;
     border: 1px solid #E7E9FC;
+    border-top: none;
 }
