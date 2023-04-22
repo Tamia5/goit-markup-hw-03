@@ -6,6 +6,7 @@
     --cursor-color: #404bbf;
     --portfolio-botton-text-color: #4D5AE5;
     --logo-footer-color: #f4f4fd;
+    --border-color: #E7E9FC;
     /* Загальний шрифт */
     --logo-font-family: 'Raleway', sans-serif;
     --main-font-family: 'Roboto', sans-serif;
@@ -20,13 +21,86 @@ body {
     font-family: var(--main-font-family);
     color: var(--main-text-color);
     background-color: var(--body-background-color);
+    width: 1440px;
+    margin: auto;
+}
+
+/*=============================================
+=            basic style            =
+=============================================*/
+
+h1,h2,h3,h4,h5,h6, p {
+    margin: 0;
+}
+ul {
+    margin: 0;
+}
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.section {
+    padding: 0;
 }
 .link {
     text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
 .list {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    
 }
+img {
+    display: block;
+}
+
+/* paragraphs */
+.info {
+    font-family: var(--main-font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+}
+
+/*=============================================
+=            Header   style    display     =
+=============================================*/
+.header {
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid var(--border-color)
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+.page-nav {
+    display: flex;
+    align-items: center;
+}
+.page-nav-left {
+    display: flex;
+    gap: 40px;
+    margin-left: 76px;
+    padding: 24px 0;
+}
+.page-nav-right {
+    display: flex;
+    align-items: center;
+    padding: 24px 0;
+    gap: 40px;
+}
+
+/*=============================================
+=            logo style            =
+=============================================*/
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -46,6 +120,7 @@ body {
     text-transform: uppercase;
 }
 
+/*---------- header  navigation  ----------*/
 .nav {
     font-weight: 500;
     font-size: 16px;
@@ -71,19 +146,20 @@ body {
     color: var(--cursor-color);
 }
 
-/* First section */
-.title {
+/*=============================================
+=            First section           =
+=============================================*/
+.title-section {
     background-color: var(--title-background-color);
-}
-.page-title {
-    color: #FFFFFF;
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
-    text-align: center;
-    letter-spacing: 0.02em;
+    padding: 188px 0;
+    
 }
 .button-order {
+    display: block;
+    margin-top: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px 32px;
     color: #FFFFFF;
     font-weight: 500;
     font-size: 16px;
@@ -92,13 +168,37 @@ body {
     background-color: #4D5AE5;
     cursor: pointer;
     font-family: var(--main-font-family);
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+
 }
 .button-order:hover,
 .button-order:focus {
     background-color: #404BBF;
 }
 
-/* Second section list + header */
+/*=============================================
+=            ALl titles            =
+=============================================*/
+.page-title {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    max-width: 496px;
+    margin: 0 auto;
+}
+.second-title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--headers-color);
+    margin-bottom: 72px;
+}
 .sub-title {
     font-family: var(--main-font-family);
     font-weight: 500;
@@ -107,29 +207,6 @@ body {
     letter-spacing: 0.02em;
     color: var(--headers-color);
 }
-.info {
-    font-family: var(--main-font-family);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--main-text-color);
-}
-
-/* The third section header */
-.title-img {
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: var(--headers-color);
-}
-
-/* The fourth section*/
-.team-card {
-    background-color: #F4F4FD;
-}
 .title-ourteam {
     font-size: 36px;
     line-height: 1.11;
@@ -137,18 +214,79 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--headers-color);
+    margin-bottom: 72px;
+}
+
+/*=============================================
+=            decription section  / second          =
+=============================================*/
+.desc-section {
+    padding: 120px 0;
+}
+.desc-container {
+    display: flex;
+    gap: 24px;
+}
+.info-container {
+    display: flex;
+    width: calc((100% - 72px) / 4);
+    gap: 8px;
+    flex-direction: column;
+
+}
+
+/*=============================================
+=            What are we doing - img           =
+=============================================*/
+.img-section {
+    padding-bottom: 120px;
+}
+.img-container {
+    display: flex;
+    gap: 24px;
+}
+
+/*=============================================
+=            Our team            =
+=============================================*/
+
+.team-card-section {
+    background-color: #F4F4FD;
+    padding: 120px 0;
+}
+.team-container {
+    display: flex;
+    gap: 24px;
 }
 .card-content {
     background-color: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+ 
+}
+.team-name {
+    padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 
-/* Footer */
+
+/*=====  End of Footer  ======*/
 .footer {
     background-color: var(--footer-background-color);
-    color: #F4F4FD;;
+    color: #F4F4FD;
+    padding: 100px 0;
+
 }
 .light-part {
     color: var(--logo-footer-color);
+}
+.footer-desc {
+    margin-top: 17px;
+    width: 264px;
+    display: flex;
 }
 
 /* Portfolio */
